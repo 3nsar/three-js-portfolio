@@ -2,6 +2,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
+}
+
+body{
+  font-family: Arial;
+  color: #fff;
 }
 
 .hero-container{
@@ -15,9 +21,11 @@
 .hero-container h1{
   position: relative;
   z-index: 10;
-  font-size: 50px;
-  color: #fff;
+  font-size: 100px;
   font-family: Arial;
+  margin-bottom: 100px;
+  font-weight: 800;
+  
 }
 
 .img1{
@@ -42,5 +50,40 @@
 
 .about-container{
   height: 100vh;
-  background-color: #4343ff;
+  background-color: #151515;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
+.about-container p{
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.about-content h1{
+  font-size: 50px;
+  margin-left: 40px;
+
+}
+
+.about-content{
+  width: 100%; 
+ max-width: 600px;
+ display: flex;
+ flex-direction: column;
+
+}
+
+.about-content p{
+  font-size: 18px;
+  line-height: 1.5;
+  margin-top: 20px;
+  margin-left: 40px;
+  
+}
+
+.about-content span{
+  color: #ff07da;
+}
+
