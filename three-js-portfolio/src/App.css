@@ -8,6 +8,7 @@
 body{
   font-family: Arial;
   color: #fff;
+  background-color: #1b1a1a;
 }
 
 .hero-container{
@@ -29,7 +30,7 @@ body{
 }
 
 .hero-container span{
-  color: #2fff3d;
+  color: #00d9ff;
   font-weight: 800;
   position: relative;
   z-index: 10;
@@ -58,15 +59,10 @@ body{
 
 .about-container{
   height: 100vh;
-  background-image: linear-gradient(to top, #ea00ff 1%, #151515  20%);
+  background-image: linear-gradient(to top, #00d9ff 30%, #151515  100%);
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.about-container p{
-  font-size: 18px;
-  line-height: 1.5;
 }
 
 .about-content h1{
@@ -76,10 +72,11 @@ body{
 }
 
 .about-content{
-  width: 100%; 
+ width: 100%; 
  max-width: 600px;
  display: flex;
  flex-direction: column;
+
 
 }
 
@@ -88,10 +85,66 @@ body{
   line-height: 1.5;
   margin-top: 20px;
   margin-left: 40px;
-  
+  color: #F8F8F8;
+  background-color: #1b1a1a;
+  border: 2px solid #ff07da;
+  border-radius: 20px;
+  padding: 2rem;
 }
 
 .about-content span{
-  color: #2fff3d;
+  color: #ff07da;
+  
 }
 
+
+/*======= PROJECTS  ======*/
+.projects-container{
+  min-height: 100vh;
+}
+.projects-container h1{
+  font-size: 50px;
+}
+.projects-title {
+  text-align: center;
+  margin-top: 20px;
+  
+}
+
+.projects-content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.projects-text{
+  max-width: 650px;
+  font-size: 20px;
+  line-height: 1.5;
+  margin-left: 20px;
+}
+
+.tech-stack{
+  margin-top: 20px;
+}
+
+.projects-text button{
+  width: 80px;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  text-align: center;
+  background-color: #00d9ff;
+  color: #000;
+  font-weight: 500;
+  margin-right: 18px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.projects-content img{
+  border-radius: 20px;
+  box-shadow: 3px 5px 20px #000;
+  margin-left: 20px;
+  margin-right: 20px;
+}

@@ -13,7 +13,11 @@ const Hero = () => {
 
   return (
     <div className='hero-container' ref={ref}>
-        <motion.h1 style={{ y: textY }}>HI I'M <span>ENSAR</span></motion.h1>
+        <motion.h1 style={{ y: textY }}  initial={{opacity: 0, scale: 0, y: -210}}
+        whileInView={{opacity: 1, scale: 1, y:0}}
+        transition={{ type: "spring", stiffness: 50, duration:0.7 }}
+        viewport={{once: true}}>
+          HI I'M <span>ENSAR</span></motion.h1>
         <motion.div className="img1" style={{y:backgroundY}}/>
         <div className="img2"/>
         
