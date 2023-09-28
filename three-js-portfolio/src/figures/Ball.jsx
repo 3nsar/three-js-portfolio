@@ -18,9 +18,9 @@ const Ball = () => {
                 makeDefault
                 position={[0,0,5]}
             />
-            <color attach="background" args={["#2fff3d"]}/>
-            <Text ref={textRef} fontSize={1} color="black">
-                HELLO
+            <color attach="background" args={["#00d9ff"]}/>
+            <Text ref={textRef} fontSize={0.5} color="black">
+            WELCOME
             </Text>
         </RenderTexture>
     </meshStandardMaterial>
