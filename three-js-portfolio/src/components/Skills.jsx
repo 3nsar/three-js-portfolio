@@ -18,39 +18,39 @@ import git from '../assets/git.png';
 
 const ballTexts = [
 
-  { img: reactIcon },
-  { img: firebase },
-  { img: nodeIcon },
-  { img: jsIcon },
-  { img: javaIcon },
-  { img: vite },
-  { img: gitCat },
-  { img: webmot },
-  { img: reactBoot },
-  { img: material },
-  { img: npm },
-  { img: git },
+  { img: reactIcon, name: "react"},
+  { img: firebase, name: "firebase" },
+  { img: nodeIcon, name: "node js" },
+  { img: jsIcon, name: "javascript" },
+  { img: javaIcon, name: "java" },
+  { img: vite, name: "vite" },
+  { img: gitCat, name: "github-desktop" },
+  { img: webmot, name: "framer-motion" },
+  { img: reactBoot, name: "react-bootstrap" },
+  { img: material, name: "material ui" },
+  { img: npm, name: "npm" },
+  { img: git, name: "git" },
   
 ];
 
 const Skills = () => {
   return (
-    <motion.div className='skills-container'
-    initial={{opacity: 0, scale: 0}}
-    whileInView={{opacity: 1, scale: 1}}
-    transition={{duration: 0.6}}
-    viewport={{once: true}}
-    >
+    <div className='skills-container'>
       
       <div className="skills-content">
       <h1>SKILLS</h1>
-        <div className="skills-content-cards">
+        <motion.div className="skills-content-cards" 
+          initial={{opacity: 0, scale: 0,}}
+          whileInView={{opacity: 1, scale: 1}}
+          transition={{duration: 0.4, type:"tween"}}
+          viewport={{once: true}}>
+
           {ballTexts.map((item, index) => (
-            <img key={index} src={item.img} alt={`Skill ${index + 1}`} />
+            <img key={index} src={item.img} alt={`Skill ${index + 1}`} title={item.name} />
           ))}
-        </div>
+        </motion.div>
       </div>
-    </motion.div>
+    </div>
   );
 };
 

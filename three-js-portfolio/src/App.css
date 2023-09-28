@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Fugaz+One&family=Goldman&family=Rubik+Glitch&family=Rubik+Mono+One&family=Yellowtail&display=swap');
+
 *{
   margin: 0;
   padding: 0;
@@ -19,12 +21,12 @@ body{
   justify-content: space-between;
   margin: 0 auto;
   max-width: 1480px;
-  padding: 1rem;
+  padding: 5px;
   background-color: transparent;
   width:100%;
   transition: all 0.8s;
   z-index: 1;
-  
+
 }
 
 .navbar-container ul{
@@ -47,8 +49,9 @@ body{
 }
 
 .navbar-container h1{
-  font-family: 'Yellowtail';
+  font-family: "Yellowtail";
   color: #00d9ff;
+  margin-left: 1rem;
 }
 
 .navbar-list{
@@ -78,6 +81,7 @@ body{
 
   .navbar-container h1{
     color: white;
+    
   }
 
   .nav-icon {
@@ -231,7 +235,7 @@ body{
   align-items: center;
   justify-content: center;
   margin-top: 30px;
-  margin-bottom: 50px;
+  margin-bottom: 80px;
 }
 .projects-text h1{
   color: #fff;
@@ -298,7 +302,7 @@ body{
 
 .skills-content-cards{
   display: grid;
-  grid-template-columns: repeat(4,100px);
+  grid-template-columns: repeat(4, 100px);
   row-gap: 20px;
   column-gap: 20px;
 }
