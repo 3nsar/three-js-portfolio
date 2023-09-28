@@ -4,6 +4,7 @@ import "./App.css"
 import About from './components/About'
 import Projects from './components/Projects'
 import Navbar from './components/Navbar'
+import Skills from './components/Skills'
 
 const App = () => {
   return (
@@ -12,6 +13,7 @@ const App = () => {
       <Hero/>
       <About/>
       <Projects/>
+      <Skills/>
     </div>
   )
 }

@@ -27,7 +27,7 @@ const Projects = () => {
         <p>This quiz app allows you to advance to higher levels by answering 7 out of 10 questions correctly. The main goal is to unlock all the secret cards. For this project, I used React JS and Firebase V9. 
           With the help of Firebase's assistance, your progress will be saved automatically.
         </p>
-        <p>TechStack: REACT, FIREBASE V9, MATERIAL UI5, Chart JS</p>
+        <p className='tech-stack'>TechStack: REACT, FIREBASE V9, MATERIAL UI5, Chart JS</p>
         <button>CODE</button>
         <button>CODE</button>
         <button>CODE</button>
