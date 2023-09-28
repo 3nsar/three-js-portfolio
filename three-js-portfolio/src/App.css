@@ -11,6 +11,121 @@ body{
   background-color: #1b1a1a;
 }
 
+/*======== NAVBAR =========*/
+
+
+.navbar-container{
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 1480px;
+  padding: 1rem;
+  background-color: transparent;
+  width:100%;
+  transition: all 0.8s;
+  z-index: 1;
+  
+}
+
+.navbar-container ul{
+  list-style: none;
+  
+}
+
+.navbar-container li{
+  margin-right: 1rem;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar-list li:hover{
+  color: #00d9ff;
+  transition: all 0.5s ease;
+
+}
+
+.navbar-container h1{
+  font-family: 'Yellowtail';
+  color: #00d9ff;
+}
+
+.navbar-list{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-icon {
+  display: none;
+  cursor: pointer;
+}
+
+.show {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+}
+
+
+@media (max-width: 1070px) {
+
+  .navbar-container{
+    background-color: #00d9ff;
+  }
+
+  .navbar-container h1{
+    color: white;
+  }
+
+  .nav-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+  }
+
+  .navbar-list {
+    display: none;
+    text-align: center;
+  }
+
+  .show {
+    top: 76px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: absolute;
+    left: 0;
+    height: 100vh;
+    width: 280px;
+    z-index: 1;
+    background-color: rgb(0, 0, 0,0.95);
+    
+  }
+
+  .show li{
+   padding: 1rem;
+   font-size: 18px;
+   border-bottom: 1px solid gray;
+   width: 100%;
+   
+  }
+
+  .show li:hover{
+    background-color: #00d9ff;
+    color: #fff;
+  }
+}
+    
+
+/*======= HERO ======*/
+
 .hero-container{
   width: 100%;
   height: 100vh;
@@ -68,7 +183,7 @@ body{
 .about-content h1{
   font-size: 50px;
   margin-left: 40px;
-
+  color: #fff;
 }
 
 .about-content{
@@ -85,7 +200,7 @@ body{
   line-height: 1.5;
   margin-top: 20px;
   margin-left: 40px;
-  color: #F8F8F8;
+  color: #dedddd;
   background-color: #1b1a1a;
   border: 2px solid #ff07da;
   border-radius: 20px;
@@ -115,13 +230,21 @@ body{
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 30px;
   margin-bottom: 50px;
 }
+.projects-text h1{
+  color: #fff;
+  font-size: 40px;
+  
+}
+
 .projects-text{
   max-width: 650px;
-  font-size: 20px;
+  font-size: 17px;
   line-height: 1.5;
   margin-left: 20px;
+  color: #dedddd;
 }
 
 .tech-stack{
