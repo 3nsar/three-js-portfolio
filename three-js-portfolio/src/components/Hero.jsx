@@ -16,8 +16,8 @@ const Hero = () => {
   return (
     <div className='hero-container' ref={ref}>
         <motion.h1 style={{ y: textY }}  initial={{opacity: 0, scale: 0, y: -210}}
-        whileInView={{opacity: 1, scale: 1, y:0}}
-        animate={{scale:1, opacity:1, y:0}}
+        whileInView={{opacity: 1, scale: 1, y:0, }}
+        transition={{duration:1,type: "tween"}}
         /*transition={{ type: "spring", stiffness: 100, duration:0.8 }}*/
         
         viewport={{once: true}}>
