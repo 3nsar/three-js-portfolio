@@ -99,7 +99,7 @@ body{
   }
 
   .show {
-    top: 76px;
+    top: 46px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
