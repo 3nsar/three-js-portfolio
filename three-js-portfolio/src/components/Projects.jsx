@@ -28,7 +28,11 @@ const Projects = () => {
         <button>CODE</button>
         <button>CODE</button>
       </div>
+      <motion.div initial={{opacity: 0, scale: 0,}}
+         whileInView={{opacity: 1, scale: 1}}
+         transition={{duration: 0.5}} viewport={{once: true}}>
       <img src={cryptoMoon} alt="" height="200px"/>
+      </motion.div>
       </div>
 
       
@@ -47,7 +51,11 @@ const Projects = () => {
         <button>CODE</button>
         <button>CODE</button>
       </div>
+      <motion.div initial={{opacity: 0, scale: 0,}}
+         whileInView={{opacity: 1, scale: 1}}
+         transition={{duration: 0.5}} viewport={{once: true}}>
       <img src={cryptoMoon} alt="pic" height="200px"/>
+      </motion.div>
       </div>
 
     </motion.div>
