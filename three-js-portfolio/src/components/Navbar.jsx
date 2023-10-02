@@ -1,7 +1,8 @@
 import React, { useContext, useState, useEffect } from 'react'
 import { FaBars } from 'react-icons/fa';
 import { AiOutlineClose } from 'react-icons/ai';
-import { Link } from 'react-scroll'
+import { Link } from 'react-scroll';
+import {motion} from "framer-motion"
 
 const Navbar = () => {
 
@@ -17,7 +18,11 @@ const Navbar = () => {
   <div className="navbar-container ">
 
 
-      <h1 onClick={()=>navigate('/main')}>E M</h1>
+      <motion.h1 onClick={()=>navigate('/main')}
+      initial={{opacity: 0, scale: 0, y:-10}}
+      whileInView={{opacity: 1, scale: 1, y:0}}
+      transition={{duration: 0.4, type:"spring"}}
+      viewport={{once: true}}>E M</motion.h1>
 
       <div className='nav-icon' onClick={handleNavClick}>
       {showNav ? <AiOutlineClose fontSize="25px"/> : <FaBars fontSize="25px"/>}
