@@ -99,7 +99,7 @@ body{
   }
 
   .show {
-    top: 46px;
+    top: 54px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -174,11 +174,12 @@ body{
   background-image:url("./assets/image2.png")
 }
 
+
 /*====ABOUT=====*/
 
 .about-container{
   height: 100vh;
-  background-image: linear-gradient(to top, #00d9ff 30%, #151515  100%);
+  background-image: linear-gradient(to top, #00d9ff 30%, #1b1a1a  100%);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -282,7 +283,7 @@ body{
 
 .skills-container{
   min-height: 100vh;
-
+  background-image: linear-gradient(to top, #ff07da 30%, #1b1a1a  100%);
 }
 
 .skills-content h1{
