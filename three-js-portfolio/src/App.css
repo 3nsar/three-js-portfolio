@@ -264,8 +264,8 @@ body{
   border-radius: 8px;
   text-align: center;
   background-color: #00d9ff;
-  color: #000;
-  font-weight: 500;
+  color: #fff;
+  font-weight: 700;
   margin-right: 18px;
   margin-top: 20px;
   cursor: pointer;
@@ -276,6 +276,12 @@ body{
   box-shadow: 3px 5px 20px #000;
   margin-left: 20px;
   margin-right: 20px;
+}
+
+.projects-text button:hover{
+  background-color: #068da5;
+  transition: all 0.4s ease-in;
+  
 }
 
 /*===========SKILLS======*/
