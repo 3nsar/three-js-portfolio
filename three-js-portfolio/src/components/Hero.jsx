@@ -1,8 +1,6 @@
 import React,{useRef} from 'react'
 import {motion,useScroll,useTransform} from "framer-motion"
 
-
-
 const Hero = () => {
     const ref = useRef(null);
     const { scrollYProgress } = useScroll({

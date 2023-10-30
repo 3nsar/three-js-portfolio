@@ -162,7 +162,8 @@ body{
   z-index: 0;
   background-position: "bottom"; /* Remove the quotation marks */
   background-size: cover;
-  background-image:url("./assets/image1.jpg")
+  background-image:url("./assets/image1.jpg");
+  
 }
 
 .img2{
@@ -171,7 +172,20 @@ body{
   z-index: 20;
   background-position: "bottom";
   background-size:cover;
-  background-image:url("./assets/image2.png")
+  background-image:url("./assets/image2.png");
+
+}
+
+@media (max-width: 500px){
+  .hero-container{
+    width: 500px;
+  }
+  .img1{
+   
+  }
+  .img2{
+    
+  }
 }
 
 
@@ -290,6 +304,18 @@ body{
   color: #ff07da;
   font-weight: 600;
 }
+
+@media (max-width: 700px){
+  .projects-content{
+    flex-direction: column;
+  }
+  .projects-content img{
+    width: 200px;
+  }
+
+}
+
+
 /*===========SKILLS======*/
 
 

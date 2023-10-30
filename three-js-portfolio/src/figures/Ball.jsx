@@ -1,4 +1,4 @@
-import React,{useRef} from 'react'
+{/*import React,{useRef} from 'react'
 import {Canvas} from "@react-three/fiber"
 import {MeshDistortMaterial, OrbitControls, PerspectiveCamera, RenderTexture, Text} from "@react-three/drei"
 import { useFrame } from '@react-three/fiber'
@@ -10,7 +10,7 @@ const Ball = () => {
     )
 
   return (
-    <mesh> {/*YOU need to add this to start */}
+    <mesh> 
     <sphereGeometry args={[1,100,100]}/>
     <meshStandardMaterial>
         <RenderTexture attach="map">
@@ -30,4 +30,4 @@ const Ball = () => {
 
     
 
-export default Ball
+export default Ball */}

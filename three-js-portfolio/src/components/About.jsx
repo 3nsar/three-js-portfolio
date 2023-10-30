@@ -1,10 +1,7 @@
 import React,{useRef} from 'react'
 import {Canvas} from "@react-three/fiber"
 import {OrbitControls, PerspectiveCamera, RenderTexture, Text} from "@react-three/drei"
-import Ball from '../figures/Ball'
 import {motion} from "framer-motion"
-
-
 
 
 const About = () => {
@@ -29,12 +26,12 @@ const About = () => {
         </motion.div>
 
 
-        <Canvas camera={{fov:25, position:[5,5,5]}}> {/*FRAME AND INSIDE WE CAN NOT CREATE SOME HTML CODE LIKE <div>*/}
-            <OrbitControls enableZoom={false} autoRotate/> {/*ROTATE*/}
+       {/* <Canvas camera={{fov:25, position:[5,5,5]}}> {/*FRAME AND INSIDE WE CAN NOT CREATE SOME HTML CODE LIKE <div>
+            <OrbitControls enableZoom={false} autoRotate/> 
             <ambientLight intensity={1}/>
             <directionalLight position={[3,2,1]}/>
             <Ball/>
-        </Canvas> 
+        </Canvas> */}
     </div>
   )
 }
