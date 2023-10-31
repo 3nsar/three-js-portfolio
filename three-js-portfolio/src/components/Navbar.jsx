@@ -30,21 +30,35 @@ const Navbar = () => {
 
 
       <ul className={`navbar-list ${showNav ? 'show' : ''}`}>
-      <li>
+              <motion.li 
+              initial={{opacity: 0, scale: 0, y:-10}}
+              whileInView={{opacity: 1, scale: 1, y:0}}
+              transition={{duration: 1, type:"spring", delay: 0.5}}
+              viewport={{once: true}}>
                 <Link activeClass="active" to="about-container" smooth={true}  duration={500}>
                    About
                 </Link>
-              </li> 
-              <li>
-              <Link activeClass="active" to="projects-container" smooth={true}  duration={500}>
+              </motion.li> 
+
+              <motion.li 
+              initial={{opacity: 0, scale: 0, y:-10}}
+              whileInView={{opacity: 1, scale: 1, y:0}}
+              transition={{duration: 1, type:"spring", delay: 0.6}} 
+              viewport={{once: true}}>
+                <Link activeClass="active" to="about-container" smooth={true}  duration={500}>
                    Projects
                 </Link>
-              </li> 
-               <li>              
-                <Link activeClass="active" to="contact-container" smooth={true}  duration={500}>
-                 Contact
+              </motion.li> 
+
+              <motion.li 
+              initial={{opacity: 0, scale: 0, y:-10}}
+              whileInView={{opacity: 1, scale: 1, y:0}}
+              transition={{duration: 1, type:"spring", delay: 0.7}} 
+              viewport={{once: true}}>
+                <Link activeClass="active" to="about-container" smooth={true}  duration={500}>
+                   Skills
                 </Link>
-                </li> 
+              </motion.li> 
       </ul>
 
     </div>
