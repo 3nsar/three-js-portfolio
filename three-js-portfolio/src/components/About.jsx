@@ -8,7 +8,7 @@ const About = () => {
 
   return (
     <div className='about-container'>
-      <motion.div className="about-content" 
+      <div className="about-content" 
         
         initial={{opacity: 0, scale: 0, x: 400}}
         whileInView={{opacity: 1, scale: 1, x:0}}
@@ -23,7 +23,7 @@ const About = () => {
               From designing and implementing innovative solutions, I am driven to create <span>meaningful and impactful software</span>. 
               Constantly seeking new challenges and opportunities, I am <span>committed </span>to improving my skills and creating applications that 
               prioritize user satisfaction. Let's bring ideas to life through code and make a <span>positive impact</span> in the digital world.</p>
-        </motion.div>
+        </div>
 
 
        {/* <Canvas camera={{fov:25, position:[5,5,5]}}> {/*FRAME AND INSIDE WE CAN NOT CREATE SOME HTML CODE LIKE <div>
