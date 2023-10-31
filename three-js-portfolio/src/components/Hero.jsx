@@ -44,10 +44,10 @@ const Hero = () => {
 
             </div>
     </div>
-    <motion.div initial={{opacity: 0, scale: 0,x:300}}
+    <motion.div initial={{opacity: 0, scale: 0,x:100}}
          whileInView={{opacity: 1, scale: 1, x:0 }}
          transition={{duration: 1, delay: 0.2}} viewport={{once: true}}>
-    <img src={avatar} alt="pic" height="400px"/>
+    <img src={avatar} alt="pic" />
     </motion.div>
   </div>
   )

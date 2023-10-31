@@ -133,8 +133,7 @@ body{
 .hero-container{
   display: flex;
   align-items: flex-start;
-  height: 100vh;
-  margin-left: 100px;
+  min-height: 100vh;
 }
 
 .hero-container h1{
@@ -155,8 +154,7 @@ body{
 .hero-content{
   align-items: flex-start;
   flex-direction: column;
-  height: 100vh;
-  margin-left: 100px;
+  margin-left: 80px;
 }
 
 .contact-links {
@@ -178,6 +176,7 @@ body{
 }
 
 .hero-container img{
+  height: 450px;
   animation: animate 2s infinite ease alternate;
 }
 
@@ -187,36 +186,39 @@ body{
   }
 }
 
-@media(max-width: 861px){
+
+@media(max-width: 1150px){
   .hero-container h1{
-    margin-top: 200px;
+    font-size: 70px;
   }
-}
-
-@media(max-width: 561px){
-
-  .hero-container h1{
-    font-size: 60px;
-    font-weight: 900;
-    
-  }
-
   .hero-container p{
     font-size: 20px;
-    color: rgb(212, 212, 212);
   }
-}
-
-@media(max-width: 405px){
-  .hero-container h1{
-    font-size: 40px;
+  .hero-container img{
+    height: 380px;
   }
 
-  .hero-container p{
-    font-size: 18px;
-    color: rgb(212, 212, 212);
-  }
 }
+
+@media(max-width: 851px){
+  .hero-content{
+    margin-left: 0px;
+    align-items: center;
+    display: flex;
+  }
+  .hero-container{
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+  }
+
+  .hero-container img{
+    margin-top: 20px;
+  }
+
+}
+
+
 
 
 
@@ -295,6 +297,7 @@ body{
   font-size: 17px;
   line-height: 1.5;
   margin-left: 20px;
+  margin-right: 20px;
   color: #dedddd;
 }
 
@@ -325,7 +328,7 @@ body{
 
 .projects-content img{
   border-radius: 20px;
-  box-shadow: 3px 5px 20px #000;
+  box-shadow: 2px 5px 20px #00d9ff;
   margin-left: 20px;
   margin-right: 20px;
  
@@ -336,16 +339,26 @@ body{
   font-weight: 600;
 }
 
-@media (max-width: 700px){
+@media (max-width: 1180px){
   .projects-content{
     flex-direction: column;
   }
   .projects-content img{
-    width: 200px;
+    margin-top: 50px;
   }
-
 }
 
+  @media (max-width: 660px){
+    .projects-container h1{
+      font-size: 30px;
+    }
+}
+
+@media (max-width: 640px){
+  .projects-text{
+    font-size: 15px;
+  }
+}
 
 /*===========SKILLS======*/
 

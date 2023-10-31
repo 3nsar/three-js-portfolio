@@ -42,7 +42,7 @@ const Skills = () => {
         <motion.div className="skills-content-cards" 
           initial={{opacity: 0, scale: 0, }}
           whileInView={{opacity: 1, scale: 1,}}
-          transition={{duration: 0.4, type:"spring"}}
+          transition={{duration: 1, type:"spring", delay: 0.1}}
           viewport={{once: true}}>
 
           {ballTexts.map((item, index) => (
