@@ -24,15 +24,17 @@ const Projects = () => {
         <p>With the Crypto-Moon app, you are able to see the latest updates in the crypto market. This is possible, thanks to multiple APIs. You can also sort them in many categories. 
           This app also contains a chat room where you can chat with people around the world.
         </p>
-        <p className="tech-stack">TechStack: REACT, FIREBASE V9, MATERIAL UI5, Chart JS, Coingecko API</p>
-        <button>CODE</button>
-        <button>CODE</button>
-        <button>CODE</button>
+        <p className="tech-stack"><span className='techstack-title'>Tech-Stack:</span> React, Firebase V9, Material UI5, Chart JS, Coingecko API</p>
+        <div className="projects-text-btns">
+         <button>CODE</button>
+         <button>LIVE</button>
+         <button>VIDEO</button>
+        </div>
       </div>
       <motion.div initial={{opacity: 0, scale: 0,}}
          whileInView={{opacity: 1, scale: 1}}
          transition={{duration: 0.5}} viewport={{once: true}}>
-      <img src={cryptoMoon} alt="" height="200px"/>
+      <img src={cryptoMoon} alt="pic"/>
       </motion.div>
       </div>
 
@@ -47,15 +49,17 @@ const Projects = () => {
         <p>This quiz app allows you to advance to higher levels by answering 7 out of 10 questions correctly. The main goal is to unlock all the secret cards. For this project, I used React JS and Firebase V9. 
           With the help of Firebase's assistance, your progress will be saved automatically.
         </p>
-        <p className='tech-stack'>TechStack: REACT, FIREBASE V9, TRIVIA API</p>
-        <button>CODE</button>
-        <button>CODE</button>
-        <button>CODE</button>
+        <p className='tech-stack'><span className='techstack-title'>Tech-Stack:</span> React, Firebase V9, Trivia API</p>
+        <div className="projects-text-btns">
+         <button>CODE</button>
+         <button>LIVE</button>
+         <button>VIDEO</button>
+        </div>
       </div>
       <motion.div initial={{opacity: 0, scale: 0,}}
          whileInView={{opacity: 1, scale: 1}}
          transition={{duration: 0.5}} viewport={{once: true}}>
-      <img src={quizapp} alt="pic" height="200px"/>
+      <img src={quizapp} alt="pic" />
       </motion.div>
       </div>
 
