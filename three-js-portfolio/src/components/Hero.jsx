@@ -9,7 +9,7 @@ const Hero = () => {
     <div className='hero-container'> 
     <div className='hero-content'> 
       <h1>Hi, I'm <span>Ensar</span></h1>
-      <p>Frontend Developer and Software Developer </p>
+      <p>Frontend Developer / Software Developer </p>
 
       <div className="contact-links">
                 <motion.a 
