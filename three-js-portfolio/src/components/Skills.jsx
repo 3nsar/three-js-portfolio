@@ -37,6 +37,7 @@ const Skills = () => {
   return (
     <div className='skills-container'>
       
+      
       <div className="skills-content">
       <h1>SKILLS</h1>
         <motion.div className="skills-content-cards" 

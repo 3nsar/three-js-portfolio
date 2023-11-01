@@ -290,6 +290,10 @@ body{
   .about-container{
     flex-direction: column;
   }
+  .about-content h1{
+    margin-left: 0px;
+    text-align: center;
+  }
 }
 
 @media (max-width: 660px){
@@ -314,7 +318,7 @@ body{
 .projects-content{
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   margin-top: 30px;
   margin-bottom: 80px;
 }
@@ -331,6 +335,7 @@ body{
   line-height: 1.5;
   margin-left: 20px;
   margin-right: 20px;
+
   color: #dedddd;
 }
 
@@ -373,8 +378,7 @@ body{
   font-weight: 600;
 }
 
-
-@media (max-width: 1180px){
+@media (max-width: 1040px){
   .projects-content{
     flex-direction: column;
   }

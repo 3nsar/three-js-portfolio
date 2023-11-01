@@ -1,6 +1,7 @@
 import React from 'react'
 import cryptoMoon from "../assets/1crymoon.png"
 import quizapp from "../assets/quizapp.png"
+import portfolio from "../assets/portfolio.png"
 import {motion} from "framer-motion"
 
 const Projects = () => {
@@ -35,6 +36,30 @@ const Projects = () => {
          whileInView={{opacity: 1, scale: 1}}
          transition={{duration: 0.5}} viewport={{once: true}}>
       <img src={cryptoMoon} alt="pic"/>
+      </motion.div>
+      </div>
+
+      <div className="projects-content">
+      <div className="projects-text">
+      <motion.h1  
+         initial={{opacity: 0, scale: 0,}}
+         whileInView={{opacity: 1, scale: 1}}
+         transition={{duration: 0.5}}
+         viewport={{once: true}}>PORTFOLIO</motion.h1>
+        <p>This portfolio website serves as a comprehensive showcase of my work and skills, 
+          providing visitors with valuable insights into my journey. Explore my projects and and discover the passion I bring to frontend development.
+        </p>
+        <p className='tech-stack'><span className='techstack-title'>Tech-Stack:</span> React, Vite, Framer-Motion, Figma, Three JS</p>
+        <div className="projects-text-btns">
+         <button>CODE</button>
+         <button>LIVE</button>
+         
+        </div>
+      </div>
+      <motion.div initial={{opacity: 0, scale: 0,}}
+         whileInView={{opacity: 1, scale: 1}}
+         transition={{duration: 0.5}} viewport={{once: true}}>
+      <img src={portfolio} alt="pic" />
       </motion.div>
       </div>
 
