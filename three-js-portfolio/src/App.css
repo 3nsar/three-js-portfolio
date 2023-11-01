@@ -412,6 +412,11 @@ body{
   font-weight: 600;
 }
 
+
+.btn-link{
+  text-decoration: none;
+}
+
 @media (max-width: 1040px){
   .projects-content{
     flex-direction: column;

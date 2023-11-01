@@ -27,9 +27,20 @@ const Projects = () => {
         </p>
         <p className="tech-stack"><span className='techstack-title'>Tech-Stack:</span> React, Firebase V9, Material UI5, Chart JS, Coingecko API</p>
         <div className="projects-text-btns">
-         <button>CODE</button>
-         <button>LIVE</button>
-         <button>VIDEO</button>
+
+         <a href="https://github.com/3nsar/crypto-moon" target="_blank" className="btn-link">
+          <button>CODE</button>
+         </a>
+
+         <a href="https://crypto-moon-e93ab.web.app/" target="_blank" className="btn-link">
+           <button>LIVE</button>
+         </a>
+
+          <a href="https://www.youtube.com/watch?v=BlRrCEzMBp8" target="_blank" className="btn-link">
+            <button>VIDEO</button>
+          </a>
+        
+
         </div>
       </div>
       <motion.div initial={{opacity: 0, scale: 0,}}
@@ -51,8 +62,14 @@ const Projects = () => {
         </p>
         <p className='tech-stack'><span className='techstack-title'>Tech-Stack:</span> React, Vite, Framer-Motion, Figma, Three JS</p>
         <div className="projects-text-btns">
-         <button>CODE</button>
-         <button>LIVE</button>
+
+        <a href="https://github.com/3nsar/three-js-portfolio" target="_blank" className="btn-link">
+          <button>CODE</button>
+         </a>
+
+         <a href="https://ensar-mehmedovic.netlify.app/" target="_blank" className="btn-link">
+           <button>LIVE</button>
+         </a>
          
         </div>
       </div>
@@ -76,9 +93,18 @@ const Projects = () => {
         </p>
         <p className='tech-stack'><span className='techstack-title'>Tech-Stack:</span> React, Firebase V9, Trivia API</p>
         <div className="projects-text-btns">
-         <button>CODE</button>
-         <button>LIVE</button>
-         <button>VIDEO</button>
+
+        <a href="https://github.com/3nsar/firebase-quiz-app" target="_blank" className="btn-link">
+          <button>CODE</button>
+         </a>
+
+         <a href="https://react-quiz-bd372.web.app/" target="_blank" className="btn-link">
+           <button>LIVE</button>
+         </a>
+
+          <a href="https://www.youtube.com/watch?v=9zcSNLiMEbE" target="_blank" className="btn-link">
+            <button>VIDEO</button>
+          </a>
         </div>
       </div>
       <motion.div initial={{opacity: 0, scale: 0,}}
