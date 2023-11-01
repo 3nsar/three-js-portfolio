@@ -29,7 +29,7 @@ const About = () => {
             <Box/>
             </Suspense>
         </Canvas> 
-    </div>
+      </div>
   )
 }
 

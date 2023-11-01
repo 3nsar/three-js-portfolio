@@ -9,7 +9,7 @@ const Box = () => {
 
   return (
     <mesh rotation={[90, 0, 20]}>
-      <boxGeometry attach="geometry" args={[2, 2,2]} />
+      <boxGeometry attach="geometry" args={[2,2,2]} />
       <meshStandardMaterial attach="material" map={texture} /> {/* Apply the texture to the material */}
     </mesh>
   );

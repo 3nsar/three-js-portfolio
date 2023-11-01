@@ -72,6 +72,14 @@ body{
   background-color: transparent;
 }
 
+.nav-link li{
+  font-size: 15px;
+  color: #fff;
+}
+
+.nav-link:hover{
+  color: #00d9ff;
+}
 
 @media (max-width: 1070px) {
 
@@ -110,21 +118,29 @@ body{
     width: 280px;
     z-index: 30;
     background-color: rgb(0, 0, 0,0.95);
-    
   }
-
-  .show li{
-   padding: 1rem;
-   font-size: 18px;
-   border-bottom: 1px solid gray;
-   width: 100%;
-   
+  .nav-link{
+    padding: 1.5rem;
+    border-bottom: 1px solid gray;
+    width: 100%;
+    cursor: pointer;
   }
-
-  .show li:hover{
-    background-color: #00d9ff;
+  
+  .nav-link li{
+    font-size: 18px;
     color: #fff;
   }
+  
+  .nav-link:hover{
+    background-color: #039cb7;
+    color: #fff;
+  }
+
+  .navbar-list li:hover{
+    color: #fff;
+    transition: all 0.5s ease;
+  }
+
 }
     
 
@@ -240,9 +256,6 @@ body{
 }
 
 
-
-
-
 /*====ABOUT=====*/
 
 .about-container{
@@ -265,8 +278,6 @@ body{
  max-width: 600px;
  display: flex;
  flex-direction: column;
-
-
 }
 
 .about-content p{
@@ -286,6 +297,7 @@ body{
 }
 
 
+
 @media (max-width: 999px){
   .about-container{
     flex-direction: column;
@@ -294,12 +306,34 @@ body{
     margin-left: 0px;
     text-align: center;
   }
+  .about-content p{
+    margin-left: 0px;
+  }
 }
 
 @media (max-width: 660px){
   .about-content h1{
     font-size: 38px;
   }
+
+  .about-content{
+    width: 100%; 
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+   }
+}
+
+@media (max-width: 415px){
+
+  .about-content{
+    width: 100%; 
+    max-width: 350px;
+   }
+
+   .about-content p{
+    font-size: 16px;
+   }
 }
 
 /*======= PROJECTS  ======*/
