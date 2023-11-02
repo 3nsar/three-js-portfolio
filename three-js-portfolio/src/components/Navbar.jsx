@@ -39,14 +39,9 @@ const Navbar = () => {
             onClick={closeNav}
             className="nav-link"
       >
-        <motion.li
-          initial={{ opacity: 0, scale: 0, y: -10 }}
-          whileInView={{ opacity: 1, scale: 1, y: 0 }}
-          transition={{ duration: 1, type: 'spring', delay: 0.5 }}
-          viewport={{ once: true }}
-        >
+        <li>
           About
-        </motion.li>
+        </li>
 
         </Link>
 
@@ -58,14 +53,9 @@ const Navbar = () => {
             onClick={closeNav}
             className="nav-link"
       >
-        <motion.li
-          initial={{ opacity: 0, scale: 0, y: -10 }}
-          whileInView={{ opacity: 1, scale: 1, y: 0 }}
-          transition={{ duration: 1, type: 'spring', delay: 0.5 }}
-          viewport={{ once: true }}
-        >
+        <li>
           Projects
-        </motion.li>
+        </li>
 
         </Link>
 
@@ -77,14 +67,9 @@ const Navbar = () => {
             onClick={closeNav}
             className="nav-link"
       >
-        <motion.li
-          initial={{ opacity: 0, scale: 0, y: -10 }}
-          whileInView={{ opacity: 1, scale: 1, y: 0 }}
-          transition={{ duration: 1, type: 'spring', delay: 0.5 }}
-          viewport={{ once: true }}
-        >
+        <li>
           Skills
-        </motion.li>
+        </li>
 
         </Link>
       </ul>
