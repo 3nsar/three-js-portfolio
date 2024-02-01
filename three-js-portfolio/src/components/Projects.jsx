@@ -2,6 +2,8 @@ import React from 'react'
 import cryptoMoon from "../assets/1crymoon.png"
 import quizapp from "../assets/quizapp.png"
 import portfolio from "../assets/portfolio.png"
+import exoandco from "../assets/exoandco.png"
+import nft from "../assets/nftdevs.png"
 import {motion} from "framer-motion"
 
 const Projects = () => {
@@ -15,7 +17,37 @@ const Projects = () => {
              className='projects-title'>PROJECTS
       </motion.h1>
       <div className="projects-content">
-      
+      <div className="projects-text">
+      <motion.h1  
+         initial={{opacity: 0, scale: 0,}}
+         whileInView={{opacity: 1, scale: 1}}
+         transition={{duration: 0.5}}
+         viewport={{once: true}}>EXO & CO</motion.h1>
+        <p>This website serves as a digital agency platform, showcasing my proficiency in design.
+        </p>
+        <p className='tech-stack'><span className='techstack-title'>Tech-Stack:</span> React, Typescript, Scss, Framer-Motion </p>
+        <div className="projects-text-btns">
+
+        <a href="https://github.com/3nsar/digital-agency" target="_blank" className="btn-link">
+          <button>CODE</button>
+         </a>
+
+         <a href="https://exoandco.netlify.app/" target="_blank" className="btn-link">
+           <button>LIVE</button>
+         </a>
+         
+        </div>
+      </div>
+      <motion.div initial={{opacity: 0, scale: 0,}}
+         whileInView={{opacity: 1, scale: 1}}
+         transition={{duration: 0.5}} viewport={{once: true}}>
+      <img src={exoandco} alt="pic" />
+      </motion.div>
+      </div>
+
+
+
+      <div className="projects-content">
       <div className="projects-text">
       <motion.h1  
          initial={{opacity: 0, scale: 0,}}
@@ -50,24 +82,20 @@ const Projects = () => {
       </motion.div>
       </div>
 
+
       <div className="projects-content">
       <div className="projects-text">
       <motion.h1  
          initial={{opacity: 0, scale: 0,}}
          whileInView={{opacity: 1, scale: 1}}
          transition={{duration: 0.5}}
-         viewport={{once: true}}>PORTFOLIO</motion.h1>
-        <p>This portfolio website serves as a comprehensive showcase of my work and skills, 
-          providing visitors with valuable insights into my journey. Explore my projects and and discover the passion I bring to frontend development.
+         viewport={{once: true}}>NFTDEVS</motion.h1>
+        <p>This is a static website.
         </p>
-        <p className='tech-stack'><span className='techstack-title'>Tech-Stack:</span> React, Vite, Framer-Motion, Figma, Three JS</p>
+        <p className='tech-stack'><span className='techstack-title'>Tech-Stack:</span> React, Typescript, Framer-Motion </p>
         <div className="projects-text-btns">
 
-        <a href="https://github.com/3nsar/three-js-portfolio" target="_blank" className="btn-link">
-          <button>CODE</button>
-         </a>
-
-         <a href="https://ensar-mehmedovic.netlify.app/" target="_blank" className="btn-link">
+         <a href="https://nftdevs.netlify.app/" target="_blank" className="btn-link">
            <button>LIVE</button>
          </a>
          
@@ -76,11 +104,11 @@ const Projects = () => {
       <motion.div initial={{opacity: 0, scale: 0,}}
          whileInView={{opacity: 1, scale: 1}}
          transition={{duration: 0.5}} viewport={{once: true}}>
-      <img src={portfolio} alt="pic" />
+      <img src={nft} alt="pic" />
       </motion.div>
       </div>
 
-      
+    
       <div className="projects-content">
       <div className="projects-text">
       <motion.h1  
@@ -113,6 +141,37 @@ const Projects = () => {
       <img src={quizapp} alt="pic" />
       </motion.div>
       </div>
+
+      <div className="projects-content">
+      <div className="projects-text">
+      <motion.h1  
+         initial={{opacity: 0, scale: 0,}}
+         whileInView={{opacity: 1, scale: 1}}
+         transition={{duration: 0.5}}
+         viewport={{once: true}}>PORTFOLIO</motion.h1>
+        <p>This portfolio website serves as a comprehensive showcase of my work and skills, 
+          providing visitors with valuable insights into my journey. Explore my projects and and discover the passion I bring to frontend development.
+        </p>
+        <p className='tech-stack'><span className='techstack-title'>Tech-Stack:</span> React, Vite, Framer-Motion, Figma, Three JS</p>
+        <div className="projects-text-btns">
+
+        <a href="https://github.com/3nsar/three-js-portfolio" target="_blank" className="btn-link">
+          <button>CODE</button>
+         </a>
+
+         <a href="https://ensar-mehmedovic.netlify.app/" target="_blank" className="btn-link">
+           <button>LIVE</button>
+         </a>
+         
+        </div>
+      </div>
+      <motion.div initial={{opacity: 0, scale: 0,}}
+         whileInView={{opacity: 1, scale: 1}}
+         transition={{duration: 0.5}} viewport={{once: true}}>
+      <img src={portfolio} alt="pic" />
+      </motion.div>
+      </div>
+
 
     </motion.div>
   )
